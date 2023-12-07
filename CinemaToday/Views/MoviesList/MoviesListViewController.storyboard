@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uVQ-oS-5hh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="NS9-v3-qj7">
+            <objects>
+                <navigationController id="uVQ-oS-5hh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Am-hg-w6M">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="JPp-qd-qiT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oh4-6d-reN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1411" y="-93"/>
+        </scene>
+        <!--Movies List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MoviesListViewController" customModule="CinemaToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-nr-0fy">
+                                <rect key="frame" x="166.66666666666666" y="450" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wzs-lC-pwT">
+                                <rect key="frame" x="0.0" y="159" width="393" height="659"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7PS-ZX-3VN">
+                                <rect key="frame" x="186" y="416" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="7ur-PT-LAM">
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="77R-X7-Wa1"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7ur-PT-LAM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4BX-8g-zwN"/>
+                            <constraint firstItem="daZ-nr-0fy" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="5MH-50-cH4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wzs-lC-pwT" secondAttribute="bottom" id="64S-DL-8Oc"/>
+                            <constraint firstItem="7ur-PT-LAM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BuK-E3-QDK"/>
+                            <constraint firstItem="daZ-nr-0fy" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="DVQ-02-Rg6"/>
+                            <constraint firstItem="wzs-lC-pwT" firstAttribute="top" secondItem="7ur-PT-LAM" secondAttribute="bottom" id="PAc-8W-NPc"/>
+                            <constraint firstItem="wzs-lC-pwT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XpF-IH-MyX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wzs-lC-pwT" secondAttribute="trailing" id="qIx-Hv-cBq"/>
+                            <constraint firstAttribute="trailing" secondItem="7ur-PT-LAM" secondAttribute="trailing" id="urW-LX-aPm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Zq-mH-0JS"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7PS-ZX-3VN" id="Voj-oK-k5m"/>
+                        <outlet property="noDataLabel" destination="daZ-nr-0fy" id="kap-lY-5f9"/>
+                        <outlet property="searchBar" destination="7ur-PT-LAM" id="dgQ-Ve-1pG"/>
+                        <outlet property="tableView" destination="wzs-lC-pwT" id="zk1-LA-80e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440.45801526717554" y="-61.267605633802823"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FD99F1D5-853E-43D6-91E6-FEE366B0A350"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B801C79-A6B3-4F47-81EE-F65EF2EA5D17"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaToday/ViewModels/MoviesViewModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "708370FA-65AA-4770-8480-D852E1697D2E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaToday/Views/MoviesList/Cell/MovieTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "setup(model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "708370FA-65AA-4770-8480-D852E1697D2E - fec45b8f664e07aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaToday.MovieTableViewCell.setup(model: CinemaToday.Movie) -&gt; ()"
+                  moduleName = "CinemaToday"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/algis/Desktop/dev/CinemaToday/CinemaToday/Views/MoviesList/Cell/MovieTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "930">
+               </Location>
+               <Location
+                  uuid = "708370FA-65AA-4770-8480-D852E1697D2E - fec45b8f664e07aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaToday.MovieTableViewCell.setup(model: CinemaToday.Movie) -&gt; ()"
+                  moduleName = "CinemaToday"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/algis/Desktop/dev/CinemaToday/CinemaToday/Views/MoviesList/Cell/MovieTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "979">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
